@@ -18,15 +18,23 @@ Single HTML file. Runs in the browser with no build step, no server, no tracking
 - Not a translator or transliterator. It recases the characters you give it
 - Not a code formatter. It converts identifiers and short strings, not whole files
 
-## Use it
+## Use
 
 Open the hosted page: https://0xelitesystem.github.io/case-converter/
 
 Or download `index.html` and open it in any browser. It works offline.
 
+1. Type or paste text into the Input box.
+2. Read all ten cases, which update as you type.
+3. Click copy next to the one you want.
+
+## Why this exists
+
+Recasing an identifier is a two-second job that should not send your text to a hosted converter covered in ads and trackers. This is one HTML file that does it in your browser, with no tracking, released under the MIT license.
+
 ## Privacy
 
-Everything runs client-side. No analytics, no cookies, no network calls, no local storage.
+Everything runs client-side. No analytics, no cookies, no network calls, no local storage except your light or dark theme choice (the `theme` key, saved when you click the theme button). The text you type is never saved or sent anywhere; the copy button writes only to your clipboard.
 
 ## Related
 
@@ -36,6 +44,19 @@ Everything runs client-side. No analytics, no cookies, no network calls, no loca
 ## More
 
 Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/case-converter
+cd case-converter
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server 8000` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with inline CSS and JavaScript.
 
 ## Third-party notices
 
